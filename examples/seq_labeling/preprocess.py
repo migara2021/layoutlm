@@ -53,7 +53,7 @@ def convert(args):
             with open(file_path, "r", encoding="utf8") as f:
                 data = json.load(f)
             image_path = file_path.replace("annotations", "images")
-            image_path = image_path.replace("json", "png")
+            image_path = image_path.replace("json", "jpg")
             file_name = os.path.basename(image_path)
             image = Image.open(image_path)
             width, length = image.size
